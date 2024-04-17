@@ -25,3 +25,24 @@ def home_body():
         Detecting the coronavirus disease from individuals to nations is crucial for safeguarding public health and minimizing the impacts of the pandemic. Therefore, technologies such as AI-supported prediction systems for early disease detection play a critical role in accelerating this process and aiding in its effective management.
         """
     )
+    st.write("## Dataset")
+    dataset()
+    st.write("\n")
+    st.markdown("<span>For additional information, please click <a href='https://github.com/mdurmus/Covid-Risks-Prediction/blob/main/README.md' target='_blank'>here</a>.</span>", unsafe_allow_html=True)
+
+
+
+def dataset():
+    dataset = st.empty()
+    dataset.markdown(f'''<div style="background-color:#ffeeeb; 
+                                     padding:30px; 
+                                     margin-top:15px;
+                                     border-radius: 5px;
+                                     text-align: left;
+                                     border:2px solid red;">
+    The dataset was provided by the Mexican government and is sourced from <a href="https://www.kaggle.com/code/addicejeremy/classifying-at-risk-covid-patients/notebook" target="_blank">Kaggle</a>. 
+    This dataset contains an enormous number of anonymized patient-related information including pre-conditions. 
+    The raw dataset consists of 21 unique features and 1,048,576 unique patients. 
+    In the Boolean features, 1 means "yes" and 2 means "no". values as 97 and 99 are missing data.
+    </div>''', unsafe_allow_html=True)
+

@@ -2,7 +2,7 @@ import streamlit as st
 from app_pages.multi_page import MultiPage
 
 from app_pages.home import home_body
-from app_pages.page2 import page2_body
+from app_pages.dataset import dataset_body
 
 st.set_page_config(
     page_title="Corona Risk Prediction",
@@ -14,7 +14,7 @@ st.set_page_config(
 app = MultiPage(app_name="Corona Risk Prediction")
 
 app.app_page("Home Page", home_body)
-app.app_page("Page 2", page2_body)
+app.app_page("Dataset", dataset_body)
 
 menu_bg_image='''
 <style>
