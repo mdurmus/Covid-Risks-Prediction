@@ -21,6 +21,21 @@ menu_bg_image='''
 [data-testid="stSidebar"] > div:first-child {
 background-image: url("https://as1.ftcdn.net/v2/jpg/04/32/38/52/1000_F_432385234_scY4zKgKV6JXfWzyZfLq210CRMrt246k.jpg");
 }
+
+section.main{
+background-color:#f0f8ff;
+}
+div.stHeadingContainer{
+    display:none;
+}
+
+div.st-emotion-cache-cnbvxy.e1nzilvr5{
+    color:#004085;
+    border-color:red;
+}
+
+h1{color:red;font-size:30px;line-height:32px;}
+h2{color:blue;font-size:28px;line-height:30px;}
 </style>
 '''
 st.markdown(menu_bg_image, unsafe_allow_html=True)
