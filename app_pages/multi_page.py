@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 class MultiPage:
     """ Class to generate multiple Streamlit pages using an object
     oriented approach
@@ -9,12 +8,6 @@ class MultiPage:
     def __init__(self, app_name) -> None:
         self.pages = []
         self.app_name = app_name
-        st.set_page_config(
-            page_title=self.app_name,
-            page_icon="🖥️",
-            layout="wide",
-            initial_sidebar_state="auto"
-        )
 
     def app_page(self, title, func) -> None:
         """ Appends title"""
