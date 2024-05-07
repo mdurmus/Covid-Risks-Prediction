@@ -13,7 +13,7 @@ st.set_page_config(
 
 app = MultiPage(app_name="Corona Risk Prediction")
 
-app.app_page("Home Page", home_body)
+app.app_page("Project Summary", home_body)
 app.app_page("Dataset", dataset_body)
 
 menu_bg_image='''
