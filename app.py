@@ -5,6 +5,7 @@ from app_pages.home import home_body
 from app_pages.dataset import dataset_body
 from app_pages.data import data_body
 from app_pages.test import test_body
+from app_pages.check import check_body
 
 st.set_page_config(
     page_title="Corona Risk Prediction",
@@ -18,6 +19,7 @@ app = MultiPage(app_name="Corona Risk Prediction")
 app.app_page("Project Summary", home_body)
 app.app_page("Dataset Features", dataset_body)
 app.app_page("Data Features", data_body)
+app.app_page("Check Yourself", check_body)
 app.app_page("Test Results", test_body)
 
 menu_bg_image='''
