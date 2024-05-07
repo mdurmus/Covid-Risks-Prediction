@@ -8,7 +8,7 @@ from data_management import load_covid_data
 
 def dataset_body():
     """ Page 2 contents"""
-    st.set_option('deprecation.showPyplotGlobalUse',False)
+    st.set_option('deprecation.showPyplotGlobalUse',False)    
     st.write('## Dataset')
     st.markdown(f'''<p>The dataset was provided by the Mexican government and is sourced from Kaggle. 
     This dataset contains an enormous number of anonymized patient-related information including pre-conditions. 

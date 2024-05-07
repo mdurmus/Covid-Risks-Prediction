@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-import streamlit.components.v1 as components
-import seaborn as sns
 
 @st.cache_data
 def load_covid_data():
@@ -16,10 +13,11 @@ def load_covid_data():
     df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(2, 0)
 
     var = df.columns[(df.nunique() == 3) | (df.nunique() == 4)].tolist()
-    df.loc[:, var] = df.loc[:, var].replace([97, 98, 99], np.NAN)
+    # Uyumsuz dtype hatasını gidermek için sütunların uygun dtype'a dönüştürülmesi
+    df[var] = df[var].astype(float)
+    df.loc[:, var] = df.loc[:, var].replace([97, 98, 99], np.nan)
     df.loc[:, var] = df.loc[:, var].replace(2, 0)
 
     df['DIED'] = np.where(df['DATE_DIED'] == '9999-99-99', 0, 1)
     df.drop(columns='DATE_DIED', inplace=True)
-
     return df
