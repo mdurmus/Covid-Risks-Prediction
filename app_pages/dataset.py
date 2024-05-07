@@ -20,7 +20,8 @@ def dataset_body():
     st.write(f"<p>Size of the dataset: <span style='font-weight:bold;'>{df.shape} </span></p>",unsafe_allow_html=True)
 
     line_add()
-
+    st.write('### Data Cleaning & Transformation')
+    st.write("<h5 style='color:pink;'>Correcting Pregnancy Values by Gender & Converting Boolean Values</h5>",unsafe_allow_html=True)
     st.write(f'''We see that all males have value 97 for pregnancy because it is missing. Given that males cannot get pregnant, 
     we will change all 97's in PREGNANT to 2. Some females have 98 which is a missing value, so we change all the 98's in PREGNANT to NAN. 
     Currently 1 represents True and 2 represents False. To change the boolean values to the conventional way, we change the 2's to 0's.''')
@@ -37,7 +38,7 @@ def dataset_body():
     df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(2, 0)
 
     line_add()
-
+    st.write("<h5 style='color:pink;'>Data Cleaning & Transformation: Rectifying and Converting Boolean Values</h5>",unsafe_allow_html=True)
     st.write(f'''Some columns contain 3-4 unique values when it should be a boolean: YES or NO. We replace all 97's, 98's, and 99's to NAN because 
                  they are missing values. The 1's mean YES and 2's mean NO, so we change 2's to 0's, the conventional way to represent Boolean values.''')
 
@@ -52,6 +53,7 @@ def dataset_body():
 
     line_add()
 
+    st.write("<h5 style='color:pink;'>Transformation of DATE_DIED Values Based on Survival Status</h5>",unsafe_allow_html=True)
     st.write(f'''DATE_DIED is represent as a pandas date format of when the patient died. If we have 9999-99-99 values, that means this patient is alive. 
                  Since our goal is to build models that predict surival rate given a patient's characteristics, we will change the DATE_DIED to 0 
                  if the patient is alive or 1 if the patient died.''')
@@ -65,7 +67,7 @@ def dataset_body():
 
     line_add()
 
-    st.write('<h3 style="color:red;">Percentage of NAN values</h3>', unsafe_allow_html=True)
+    st.write('### Data Accuracy and Missing Values Analysis')
 
     nan_percentage_data = {'Column': [], 'NaN Percentage': []}
     for col in df.columns:
@@ -74,6 +76,13 @@ def dataset_body():
         nan_percentage_data['NaN Percentage'].append('{:.2f}%'.format(nan_percentage))
     nan_percentage_df = pd.DataFrame(nan_percentage_data)
     st.table(nan_percentage_df)
+
+    line_add()
+
+    st.write('### Variables in dataset')
+    st.write("Variables in our dataset are as follows. After the mentioned operations are completed, the total number of remaining variables is 21.")
+    columns = df.columns.tolist()
+    st.write(columns)
 
     line_add()
 
