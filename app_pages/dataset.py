@@ -32,10 +32,7 @@ def dataset_body():
         df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(98, np.nan)
         df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(2, 0)
     </code>''', unsafe_allow_html=True)
-    # df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(97, 2)
-    # df['PREGNANT'] = df['PREGNANT'].astype('float64')
-    # df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(98, np.nan)
-    # df.loc[:, 'PREGNANT'] = df.loc[:, 'PREGNANT'].replace(2, 0)
+   
 
     line_add()
     st.write("<h5 style='color:pink;'>Data Cleaning & Transformation: Rectifying and Converting Boolean Values</h5>",unsafe_allow_html=True)
@@ -47,9 +44,7 @@ def dataset_body():
     df.loc[:, var] = df.loc[:, var].replace([97, 98, 99], np.NAN)
     df.loc[:, var] = df.loc[:, var].replace(2, 0)
     </code>''', unsafe_allow_html=True)
-    # var = df.columns[(df.nunique() == 3) | (df.nunique() == 4)].tolist()
-    # df.loc[:, var] = df.loc[:, var].replace([97, 98, 99], np.NAN)
-    # df.loc[:, var] = df.loc[:, var].replace(2, 0)
+   
 
     line_add()
 
@@ -62,8 +57,35 @@ def dataset_body():
     df['DIED'] = np.where(df['DATE_DIED'] == '9999-99-99', 0, 1)
     df.drop(columns='DATE_DIED', inplace=True)
     </code>''', unsafe_allow_html=True)
-    # df['DIED'] = np.where(df['DATE_DIED'] == '9999-99-99', 0, 1)
-    # df.drop(columns='DATE_DIED', inplace=True)
+
+    line_add()
+
+    st.write("<h5 style='color:pink;'>Correlation Test and Feature Extraction</h5>",unsafe_allow_html=True)
+    st.write(f'''To extract the features that has the lowest correlation with the column DIED, we made a correlation test.''')
+
+    st.markdown(f'''<code>
+                    correlation_matrix = df.corr()
+                    target_variable = 'DIED'
+                    correlation_with_target = correlation_matrix[target_variable]
+                    sorted_correlation = correlation_with_target.abs().sort_values()
+                    lowest_4_features = sorted_correlation.head(4).index      
+    </code>''', unsafe_allow_html=True)
+
+    st.write("According to correlation test, we found out these 4 features with lowest correlation with 'DIED' column")
+
+    st.markdown(f'''<pre><code>
+                        Lowest 4 correlated features with DIED :
+                        Index(['TOBACCO', 'ASTHMA', 'PREGNANT', 'INMSUPR'], dtype='object')  
+    </code></pre>''', unsafe_allow_html=True)
+
+    st.write("Thus, we will drop the features that have low correlation with DIED feature.")
+
+    st.markdown(f'''<pre><code>
+                        df.drop(columns=lowest_4_features, inplace=True)
+    </code></pre>''', unsafe_allow_html=True)
+
+
+
 
     line_add()
 
@@ -83,7 +105,6 @@ def dataset_body():
     st.write("Variables in our dataset are as follows. After the mentioned operations are completed, the total number of remaining variables is 21.")
     columns = df.columns.tolist()
     st.write(columns)
-
    
 
 

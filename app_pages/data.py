@@ -9,18 +9,26 @@ from data_management import load_covid_data
 def data_body():
     """ Page 2 contents"""
     df = load_covid_data()
-
+    st.set_option('deprecation.showPyplotGlobalUse',False)    
     st.write('### Data Summary')
     st.markdown('<p>We are displaying the summary of the dataset. The first five rows show the beginning and content of the dataset. This shows which columns make up the dataset, the first five rows of each column, and the data types found in these rows. This information provides a quick overview of the dataset\'s contents and can help in deciding which columns to select for further analysis.</p>',unsafe_allow_html=True)
 
     st.write(df.head())
     line_add()
     
+
     st.write('### Access Data')
     st.markdown('<p>In the "Access Data" section, users are provided with the option to select specific columns from the dataset. A multiselect dropdown menu is presented where users can choose one or more columns they are interested in. Once the columns are selected, the corresponding data from those columns is displayed in a table format below the dropdown menu. This allows users to focus on specific columns of interest and explore their data further.</p>',unsafe_allow_html=True)
-    selected_columns = st.multiselect('Select Column: ',df.columns)
+
+    option = st.selectbox(
+    "Number Records",
+    (10, 50, 100, 1000000),
+    index=None,
+    placeholder="Number of Records")
+    disabled = option is None
+    selected_columns = st.multiselect('Select Column: ',df.columns, disabled=disabled)
     if selected_columns:
-        st.write(df[selected_columns])
+        st.write(df[selected_columns].head(option))
     line_add()
     
     
