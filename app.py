@@ -26,10 +26,16 @@ menu_bg_image='''
 <style>
 [data-testid="stSidebar"] > div:first-child {
 background-image: url("https://as1.ftcdn.net/v2/jpg/04/32/38/52/1000_F_432385234_scY4zKgKV6JXfWzyZfLq210CRMrt246k.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+margin: 0;
+padding: 0;
 }
 
 section.main{
-background-color:#f0f8ff;
+background-color:#000;
 }
 div.stHeadingContainer{
     display:none;

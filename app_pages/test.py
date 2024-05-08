@@ -27,7 +27,7 @@ def test_body():
     st.pyplot()
     line_add()
     st.markdown('''
-                <div style="margin:10px;padding:10px;">
+                <div style="margin:10px;padding:10px;color:white;">
                 <h3>Training Accuary</h3>
                 <p>
                 "Training Accuracy" refers to how successful a machine learning model is on its training dataset. It's typically expressed as the ratio of correctly classified examples to the total number of examples. For instance, for a classification model, training accuracy is calculated by dividing the number of correctly predicted labels by the total number of examples. In other words, it's expressed as a percentage, where the number of correctly predicted examples is divided by the total number of examples.
@@ -40,7 +40,7 @@ def test_body():
     line_add()
     st.write('')
     st.markdown('''
-                <div style="margin:10px;padding:10px;">
+                <div style="margin:10px;padding:10px;color:white;">
                 <h3>Testing Accuracy</h3>
                 <p>
                 "Testing Accuracy" (Test Accuracy) is a metric that measures how well a machine learning model performs on a test dataset it hasn't been exposed to during training. It's typically expressed as the ratio of correctly classified examples to the total number of examples in the test dataset.
@@ -69,8 +69,21 @@ def test_body():
     st.write('')
     st.markdown('''
                 <div style="margin:10px;padding:10px;">
-                <h3>draw_matrix(y_test, y_pred)</h3>
-                <p>buraya aciklama gelecek...</p>
+                <h3>Confusion Matrix</h3>
+                <p>
+                Confusion Matrix, is a metric used to evaluate the performance of a classification model. It particularly compares the actual and predicted classes to assess how well the model performs.
+
+                A confusion matrix displays four different outcome categories:
+
+                - **True Positives (TP)**: Instances where the model correctly predicts the positive class.
+                - **False Positives (FP)**: Instances where the model incorrectly predicts the positive class.
+                - **True Negatives (TN)**: Instances where the model correctly predicts the negative class.
+                - **False Negatives (FN)**: Instances where the model incorrectly predicts the negative class.
+
+                These four categories can be used to analyze the performance of the classification model in more detail. Performance metrics such as precision and recall can be calculated from the confusion matrix.
+
+                The confusion matrix is a valuable tool to understand how accurately the model predicts each class and which classes it confuses. Therefore, it is commonly used to evaluate the performance of classification models and to understand error types.
+                </p>
                 <img style='width:auto;height:auto;' src='https://res.cloudinary.com/dpg6ubeyo/image/upload/v1715168436/visualization_galv2p.png' />
                 </div>
                 ''',unsafe_allow_html=True)
