@@ -21,14 +21,22 @@ def data_body():
     st.markdown('<p>In the "Access Data" section, users are provided with the option to select specific columns from the dataset. A multiselect dropdown menu is presented where users can choose one or more columns they are interested in. Once the columns are selected, the corresponding data from those columns is displayed in a table format below the dropdown menu. This allows users to focus on specific columns of interest and explore their data further.</p>',unsafe_allow_html=True)
 
     option = st.selectbox(
-    "Number Records",
-    (10, 50, 100, 1000000),
-    index=None,
-    placeholder="Number of Records")
-    disabled = option is None
-    selected_columns = st.multiselect('Select Column: ',df.columns, disabled=disabled)
-    if selected_columns:
-        st.write(df[selected_columns].head(option))
+        "Number Records",
+        (10, 50, 100, 1000, 10000, 100000, 1000000),
+        index=None,
+        placeholder="Number of Records",
+        help="Please select the number of records."
+    )
+
+    if option is not None:  # Option değeri seçilmiş mi kontrol ediyoruz
+        disabled = option is None
+        selected_columns = st.multiselect('Select Column: ', df.columns, disabled=disabled)
+
+        if selected_columns:
+            st.write(df[selected_columns].head(option))
+
+        option_str = str(option)  # Dönüşümü kaldırdık, çünkü option zaten string olarak kullanılabilir.
+
     line_add()
     
     
