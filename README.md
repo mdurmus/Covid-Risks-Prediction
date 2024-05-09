@@ -19,4 +19,16 @@ The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirn
 | USMER  | The variable that indicates whether the patient has received COVID treatment before. | Yes, No  |
 | SEX  | The variable that stores the gender of the patient.  | Male, Female  |
 | PATIENT_TYPE  | The variable that stores whether the patient's treatment should be done at home or in the hospital.  | Returned Home, Hospitalization  |
-| demo | demo | demo |
+| PNEUMONIA | The variable that stores the presence of pneumonia in the patient. | Yes, No |
+| AGE | The variable that stores the age information of the patient. | Numeric |
+| DIABETES | The variable that stores whether the patient has diabetes or not. | Yes, No |
+| COPD | The variable that stores whether the patient has COPD (Chronic Obstructive Pulmonary Disease) or not. | Yes, No |
+| HIPERTENSION | The variable that stores whether the patient has hypertension or not. | Yes, No |
+| OTHER_DISEASE | The variable that stores whether the patient has any other condition or not. | Yes, No |
+| CARDIOVASCULAR | The variable that stores whether the patient has cardiovascular disease or not. | Yes, No |
+| OBESITY | The variable that stores whether the patient is obese or not. | Yes, No |
+| RENAL_CHRONIC | The variable that stores whether the patient has a chronic kidney condition or not. | Yes, No |
+| MEDICAL_UNIT | The type of National Health institution providing patient care and treatment.
+ | 1-13 |
+| CLASIFFICATION_FINAL | Covid test results. | 1-7 |
+
