@@ -47,7 +47,9 @@ The hypothesis of the AI-based Covid risk prediction project is that it can accu
 
 The validation method involves evaluating the performance of the software on real-world data, particularly assessing its ability to accurately identify high-risk individuals. Furthermore, its effectiveness in guiding healthcare institutions and receiving feedback from them will be assessed to iterate and improve the software.
 
-## Matching Business Requirements with Machine Learning Tasks
+## ML Based Disease Concerns Addressing Application
+
+### Model Evaluation and Feature Selection
 
 I used the scikit-learn library for optimizing model parameters. There is a need for an application that works with a machine learning-based classification system to address the concerns of each individual in the public regarding the disease.
 
@@ -60,3 +62,9 @@ I used the correlation test to understand the relationships between variables in
 - Decision Tree ROC Curve: The slope is quite high, indicating that the model performs well. The curve starts from the bottom left corner and extends to the top right corner. This indicates that the model achieves high accuracy at all threshold values.
 
 You can access the details of these tests from the Test Results page within the project.
+
+## Business Case
+
+1. The customer wants to see how data related to COVID-19, such as disease symptoms and test results, can be gathered and analyzed. 
+
+2. The customer also wants to develop a model capable of predicting COVID-19 cases.
