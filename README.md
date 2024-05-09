@@ -31,3 +31,8 @@ The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirn
 | MEDICAL_UNIT | The type of National Health institution providing patient care and treatment. | 1-13 |
 | CLASIFFICATION_FINAL | Covid test results. | 1-7 |
 
+## Business Requirements
+
+The AI-based Covid risks prediction project will collect and integrate Covid-19 test results and symptom data from healthcare institutions and other sources. These data will be analyzed by a risk scoring algorithm and presented to users via a user interface. The project will encompass ensuring the security and privacy of user data, compliance with GDPR and similar legal regulations, scalability and performance, authentication and authorization processes, transmission and monitoring of results, and regular system maintenance."
+
+"This AI-driven Covid risks prediction software will serve as a fast and effective Covid-19 monitoring and control tool for governments and healthcare institutions. It will provide significant support in identifying and guiding high-risk individuals to healthcare systems. Additionally, it will help create a secure environment for businesses and communities, thus aiding in preventing the spread of the pandemic. Individuals will be informed about their health status, enabling them to track and protect themselves, making them more aware and effective in combating the pandemic.
