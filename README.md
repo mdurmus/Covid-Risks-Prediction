@@ -58,3 +58,5 @@ I used the correlation test to understand the relationships between variables in
 - F1 Score: 0.48611369990680336
 - Confusion Matrix: Overall, the predicted values are close to the true values. The highest accuracy rate is 90.10%, and the lowest accuracy rate is 3.18%.
 - Decision Tree ROC Curve: The slope is quite high, indicating that the model performs well. The curve starts from the bottom left corner and extends to the top right corner. This indicates that the model achieves high accuracy at all threshold values.
+
+You can access the details of these tests from the Test Results page within the project.
