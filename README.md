@@ -9,3 +9,12 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 [Covid Risk Prediction Live Application](https://covid-predictors-0ff909d85a90.herokuapp.com/)
 
 [Covid Risk Project User Stories](https://github.com/users/mdurmus/projects/7/views/1)
+
+## Dataset Content
+
+The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirnizri/covid19-dataset) website. The dataset has been provided by the Mexican government. Originally, it consists of 21 features and a total of 1,048,576 patient records. However, due to feature engineering efforts, the number of features has been reduced to 16. You can find relevant explanations on the project page.
+
+| Variable | Meaning  | Units    |
+|----------|----------|----------|
+| USMER  | feature engineering efforts, the number of features has been reduced to 16. You can find relevant explanations o  | True , False  |
+| Hücre 4  | Hücre 5  | Hücre 6  |
