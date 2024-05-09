@@ -63,8 +63,46 @@ I used the correlation test to understand the relationships between variables in
 
 You can access the details of these tests from the Test Results page within the project.
 
-## Business Case
+## ML Business Case
+
+### Business Requirements
 
 1. The customer wants to see how data related to COVID-19, such as disease symptoms and test results, can be gathered and analyzed. 
 
 2. The customer also wants to develop a model capable of predicting COVID-19 cases.
+
+### Business Goal Addressable with Traditional Data Analysis
+
+We can explore the relationships between specific symptoms associated with COVID-19 and test results.
+
+### Dashboard or API Endpoint Need
+
+The customer wants to track COVID-19 cases through a dashboard interface.
+
+### Successful Project Outcome
+
+Delivering a study on significant determinants related to COVID-19. Additionally, developing a model capable of predicting COVID-19 cases.
+
+### Project Epics and User Stories
+
+- Information gathering and data collection: Gathering data associated with COVID-19 cases.
+
+- Data visualization, cleaning, and preparation: Visualizing data, cleaning it, and preparing it for modeling.
+
+- Model training, optimization, and validation: Developing and optimizing a model to predict COVID-19 cases.
+
+- Dashboard planning, design, and development: Creating a dashboard that visualizes COVID-19 cases.
+
+- Dashboard deployment and release: Making the dashboard ready for use and delivering it to the customer.
+
+### Recommended Model
+The data suggests proposing a classification model that can predict COVID-19 cases.
+
+### Model Inputs and Outputs
+The inputs are data associated with COVID-19, such as disease symptoms and demographic information. The output includes predicting the likelihood or probability of an individual contracting COVID-19.
+
+### Performance Targets for Predictions
+Performance metrics such as accuracy and precision of the model will be used to assess its ability to predict COVID-19 cases.
+
+### Customer Benefits
+A model that predicts COVID-19 cases can assist healthcare institutions in disease control and resource management. Additionally, it can serve as an informative tool for the overall health of the community.
