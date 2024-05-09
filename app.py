@@ -22,8 +22,9 @@ app.app_page("Data Features", data_body)
 app.app_page("Check Yourself", check_body)
 app.app_page("Test Results", test_body)
 
-menu_bg_image='''
+general_css='''
 <style>
+
 [data-testid="stSidebar"] > div:first-child {
 background-image: url("https://as1.ftcdn.net/v2/jpg/04/32/38/52/1000_F_432385234_scY4zKgKV6JXfWzyZfLq210CRMrt246k.jpg");
 background-size: cover;
@@ -34,40 +35,25 @@ margin: 0;
 padding: 0;
 }
 
-section.main{
-background-color:#000;
-}
-div.stHeadingContainer{
-    display:none;
-}
-
-div.st-emotion-cache-cnbvxy.e1nzilvr5{
-    color:#004085;
-    border-color:red;
+h2{
+    color:#0B60B0;
+    font-size:32px;
+    line-height:36px;
 }
 
-[data-testid="stTableStyledTable"] {
-  color: #fff;
-  border: 3px solid #CAF4FF;
-  border-collapse: collapse;
-  width:100%;
+h3{
+    color:#40a2d8;
+    font-size:28px;
+    line-height:30px;
 }
 
-[data-testid="stTableStyledTable"] th, 
-[data-testid="stTableStyledTable"] td {
-  border: 1px solid #CAF4FF;
-  padding: 8px;
-  text-align: left;
+h4{
+    color:#f0edcf;
+    font-size:28px;
+    line-height:30px;
 }
 
-th.col_heading {
-  color: blue;
-}
-
-h1{color:red;font-size:30px;line-height:32px;}
-h2{color:#CAF4FF;font-size:28px;line-height:30px;}
-h3{color:orange;font-size:24px;line-height:26px;}
 </style>
 '''
-st.markdown(menu_bg_image, unsafe_allow_html=True)
+st.markdown(general_css, unsafe_allow_html=True)
 app.run()
