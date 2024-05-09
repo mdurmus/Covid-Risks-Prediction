@@ -15,38 +15,30 @@ def check_body():
     st.write('Please enter your options')
 
     scaler = RobustScaler()
-
-    # Load the ML model
     with open("model.pkl", "rb") as f:
         model = pickle.load(f)
 
     with open("scaler.pkl", "rb") as f:
         scaler = pickle.load(f)
 
-    # Define feature names (excluding target)
     features = [
         "USMER","SEX","PATIENT_TYPE","PNEUMONIA","AGE","DIABETES","COPD","HIPERTENSION","OTHER_DISEASE","CARDIOVASCULAR","OBESITY","RENAL_CHRONIC","MEDICAL_UNIT","CLASIFFICATION_FINAL"
     ]
 
-    # Create checkboxes for feature selection
     selected_features = st.multiselect("Select Features:", features, default=features)
 
-    # Display user input section
     user_input = {}
     for feature in selected_features:
-        if feature in ["AGE"]:  # Handle numerical features (adjust data types)
+        if feature in ["AGE"]:
             user_in = st.number_input(f"Enter {feature}:")
             user_input[feature] = scaler.transform([[user_in]])[0][0]
 
-        #one hot encoded feature
         elif feature == "CLASIFFICATION_FINAL":
-            # Radio buttons for one-hot encoding
             classification_final_value = st.radio(
                 "Select CLASIFFICATION_FINAL:",
                 ("1", "2", "3", "4", "5", "6", "7"),
                 horizontal=True
             )
-            # Create one-hot encoded representation based on selection (assuming 0 for not selected)
             user_input["CLASIFFICATION_FINAL_1"] = float(classification_final_value == "1")
             user_input["CLASIFFICATION_FINAL_2"] = float(classification_final_value == "2")
             user_input["CLASIFFICATION_FINAL_3"] = float(classification_final_value == "3")
@@ -55,15 +47,12 @@ def check_body():
             user_input["CLASIFFICATION_FINAL_6"] = float(classification_final_value == "6")
             user_input["CLASIFFICATION_FINAL_7"] = float(classification_final_value == "7")
 
-        #one hot encoded feature
         elif feature == "MEDICAL_UNIT":
-            # Radio buttons for one-hot encoding
             classification_final_value = st.radio(
                 "Select MEDICAL_UNIT:",
                 ("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"),
                 horizontal=True
             )
-            # Create one-hot encoded representation based on selection (assuming 0 for not selected)
             user_input["MEDICAL_UNIT_1"] = float(classification_final_value == "1")
             user_input["MEDICAL_UNIT_2"] = float(classification_final_value == "2")
             user_input["MEDICAL_UNIT_3"] = float(classification_final_value == "3")
@@ -78,44 +67,39 @@ def check_body():
             user_input["MEDICAL_UNIT_12"] = float(classification_final_value == "12")
             user_input["MEDICAL_UNIT_13"] = float(classification_final_value == "13")
 
-        elif feature == "SEX": #feature == "USMER"or feature == "PATIENT_TYPE"
-            #user_input[feature] = st.selectbox(f"Select {feature}:", [1.0, 2.0])
-           
-            # Define options and corresponding values
+        elif feature == "SEX":
             gender_map = {"Female": 1.0, "Male": 2.0}
-
-            # Create the selectbox with a default selection (optional)
             selected_gender = st.selectbox("Select Gender:", list(gender_map.keys()), index=0)
-
-            # Get gender value using dictionary lookup (avoiding if-else)
             gender_value = gender_map.get(selected_gender, 0.0)  # Default value if not found
-
-            # Use the gender_value variable in your code
             user_input[feature] = gender_value
+            if gender_value is None:
+                st.error("Please select a valid sex.")
+            else:
+                user_input[feature] = gender_value
 
         elif feature == "PATIENT_TYPE":
             patient_type_map = {"Returned Home": 1.0, "Hospitalization": 2.0}
-
-            # Create the selectbox with a default selection (optional)
             selected_patient_type = st.selectbox("Select Patient Type:", list(patient_type_map.keys()), index=0)
-
-            # Get gender value using dictionary lookup (avoiding if-else)
             patient_type_value = patient_type_map.get(selected_patient_type, 1.0)  # Default value if not found
-
-            # Use the gender_value variable in your code
             user_input[feature] = patient_type_value
+            if patient_type_value is None:
+                st.error("Please select a valid option for Patient Type.")
+            else:
+                user_input[feature] = patient_type_value
+
+        elif feature == "USMER":
+            usmer_options = {"No": 0.0, "Yes": 1.0}
+            selected_usmer = st.selectbox("Have you received COVID treatment before?", list(usmer_options.keys()), index=0)
+            usmer_value = usmer_options.get(selected_usmer, None)
+            if usmer_value is None:
+                st.error("Please select a valid option for COVID treatment.")
+            else:
+                user_input[feature] = usmer_value
         
         elif feature == "PNEUMONIA":
-            # Clarify presence/absence (binary classification)
             pneumonia_options = {"No": 0.0, "Yes": 1.0}
-
-            # Create the selectbox with a clear prompt
             selected_pneumonia = st.selectbox("Does the patient have Pneumonia?", list(pneumonia_options.keys()), index=0)
-
-            # Get pneumonia value using dictionary lookup
-            pneumonia_value = pneumonia_options.get(selected_pneumonia, None)  # Handle invalid selections gracefully
-
-            # Validate user input (optional)
+            pneumonia_value = pneumonia_options.get(selected_pneumonia, None)
             if pneumonia_value is None:
                 st.error("Please select a valid option for Pneumonia.")
             else:
@@ -132,7 +116,7 @@ def check_body():
 
         elif feature == "COPD":
             copd_options = {"No": 0.0, "Yes":1.0}
-            selected_copd = st.selectbox("Does the patient have COPD?", list(copd_options.keys()), index=0)
+            selected_copd = st.selectbox("Does the patient have COPD? Chronic Obstructive Pulmonary Disease", list(copd_options.keys()), index=0)
             copd_value = copd_options.get(selected_copd, None)
             if copd_value is None:
                 st.error("Please select a valid option for COPD.")
@@ -184,29 +168,18 @@ def check_body():
             else:
                 user_input[feature] = renal_chronic_value
         
-        
-
-        else:  # Handle categorical features (adjust based on encoding)
+        else:
             user_input[feature] = st.selectbox(f"Select {feature}:", [0.0, 1.0])
 
-    # Create a button to trigger prediction
     predict_button = st.button("Predict Mortality Risk")
 
-    # Prediction logic (conditional)
+
     if predict_button:
-        # Prepare user input as a list or NumPy array
         X = [user_input["USMER"], user_input["SEX"], user_input["PATIENT_TYPE"], user_input["PNEUMONIA"], user_input["AGE"], user_input["DIABETES"], user_input["COPD"], user_input["HIPERTENSION"], user_input["OTHER_DISEASE"], user_input["CARDIOVASCULAR"], user_input["OBESITY"], user_input["RENAL_CHRONIC"], user_input["MEDICAL_UNIT_1"], user_input["MEDICAL_UNIT_2"], user_input["MEDICAL_UNIT_3"], user_input["MEDICAL_UNIT_4"], user_input["MEDICAL_UNIT_5"], user_input["MEDICAL_UNIT_6"], user_input["MEDICAL_UNIT_7"], user_input["MEDICAL_UNIT_8"], user_input["MEDICAL_UNIT_9"], user_input["MEDICAL_UNIT_10"], user_input["MEDICAL_UNIT_11"], user_input["MEDICAL_UNIT_12"], user_input["MEDICAL_UNIT_13"], user_input["CLASIFFICATION_FINAL_1"], user_input["CLASIFFICATION_FINAL_2"],user_input["CLASIFFICATION_FINAL_3"], user_input["CLASIFFICATION_FINAL_4"], user_input["CLASIFFICATION_FINAL_5"], user_input["CLASIFFICATION_FINAL_6"], user_input["CLASIFFICATION_FINAL_7"]]
-
-        st.write(X)
-
-
-        X = np.array([X])  # Convert to a 2D array for prediction (adjust if needed)
-
-        # Make prediction using the loaded model
-        prediction = model.predict(X)[0]  # Assuming binary classification
-
-        # Display the prediction result
-        st.write(f"The Patient will probably: {"die" if prediction else "live"}")  # Format probability
+        
+        X = np.array([X])
+        prediction = model.predict(X)[0]
+        st.write(f"<p style='color:#c3ff93;font-size:24px;line-height:30px;'>The Patient will probably: {"die" if prediction else "live"}",unsafe_allow_html=True) 
 
 
 def line_add():
