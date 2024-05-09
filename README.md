@@ -6,3 +6,5 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 
 ![Covid Risk Prediction](readme/intro.png)
 
+[Covid Risk Prediction Live Application](https://covid-predictors-0ff909d85a90.herokuapp.com/)
+
