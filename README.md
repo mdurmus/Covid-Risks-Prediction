@@ -16,5 +16,7 @@ The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirn
 
 | Variable | Meaning  | Units    |
 |----------|----------|----------|
-| USMER  | feature engineering efforts, the number of features has been reduced to 16. You can find relevant explanations o  | True , False  |
-| Hücre 4  | Hücre 5  | Hücre 6  |
+| USMER  | The variable that indicates whether the patient has received COVID treatment before. | Yes, No  |
+| SEX  | The variable that stores the gender of the patient.  | Male, Female  |
+| PATIENT_TYPE  | The variable that stores whether the patient's treatment should be done at home or in the hospital.  | Returned Home, Hospitalization  |
+| demo | demo | demo |
