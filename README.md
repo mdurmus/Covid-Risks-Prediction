@@ -28,7 +28,6 @@ The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirn
 | CARDIOVASCULAR | The variable that stores whether the patient has cardiovascular disease or not. | Yes, No |
 | OBESITY | The variable that stores whether the patient is obese or not. | Yes, No |
 | RENAL_CHRONIC | The variable that stores whether the patient has a chronic kidney condition or not. | Yes, No |
-| MEDICAL_UNIT | The type of National Health institution providing patient care and treatment.
- | 1-13 |
+| MEDICAL_UNIT | The type of National Health institution providing patient care and treatment. | 1-13 |
 | CLASIFFICATION_FINAL | Covid test results. | 1-7 |
 
