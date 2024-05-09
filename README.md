@@ -46,3 +46,15 @@ The hypothesis of the AI-based Covid risk prediction project is that it can accu
 ### Validation
 
 The validation method involves evaluating the performance of the software on real-world data, particularly assessing its ability to accurately identify high-risk individuals. Furthermore, its effectiveness in guiding healthcare institutions and receiving feedback from them will be assessed to iterate and improve the software.
+
+## Matching Business Requirements with Machine Learning Tasks
+
+I used the scikit-learn library for optimizing model parameters. There is a need for an application that works with a machine learning-based classification system to address the concerns of each individual in the public regarding the disease.
+
+I used the correlation test to understand the relationships between variables in my dataset and to identify which variables are correlated. Additionally, the results of this test helped me understand the relationships between variables. Understanding the relationships between variables also facilitated my feature selection process.
+
+- Training Accuracy Score: 0.9626941603535738
+- Testing Accuracy Score: 0.9328095221847994
+- F1 Score: 0.48611369990680336
+- Confusion Matrix: Overall, the predicted values are close to the true values. The highest accuracy rate is 90.10%, and the lowest accuracy rate is 3.18%.
+- Decision Tree ROC Curve: The slope is quite high, indicating that the model performs well. The curve starts from the bottom left corner and extends to the top right corner. This indicates that the model achieves high accuracy at all threshold values.
