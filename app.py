@@ -36,7 +36,7 @@ padding: 0;
 }
 
 h2{
-    color:#0B60B0;
+    color:#0b60b0;
     font-size:32px;
     line-height:36px;
 }
@@ -52,6 +52,17 @@ h4{
     font-size:28px;
     line-height:30px;
 }
+
+h5{
+    color:#ff9bd2;
+    font-size:23px;
+    line-height:26px;
+}
+
+th.col_heading {
+  color: #fd951f;
+}
+
 
 </style>
 '''
