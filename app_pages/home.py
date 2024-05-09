@@ -4,13 +4,22 @@ import streamlit as st
 def home_body():
     """ Home page contents"""
     st.write("## Welcome to Corona Risk Prediction")
-    st.info(
-        f"""This platform is designed to classify at-risk COVID patients using an artificial intelligence model developed during the COVID-19 pandemic. 
-            Our goal is to assess patients\' health conditions and identify potential risk factors by utilizing this AI model.""")
+    st.markdown(f"""<div style="
+                        background-color:#ffeeeb; 
+                        padding:30px; 
+                        margin-top:15px;
+                        border-radius: 5px;
+                        text-align: left;
+                        border:2px solid red;">
+    This platform is designed to classify at-risk COVID patients using an artificial intelligence model developed 
+    during the COVID-19 pandemic. Our goal is to assess patients\' health conditions and identify potential risk 
+    factors by utilizing this AI model.</div>""", unsafe_allow_html=True)
     st.write("## Dataset")
     dataset()
-    st.write("\n")
-    st.markdown("<span>For additional information, please click <a href='https://github.com/mdurmus/Covid-Risks-Prediction/blob/main/README.md' target='_blank'>here</a>.</span>", unsafe_allow_html=True)
+    st.write("")
+    st.markdown(f"""<span style="font-size:20px;color:white;">
+    For additional information, please click <a href='https://github.com/mdurmus/Covid-Risks-Prediction/blob/main/README.md' target='_blank'>here</a>.</span>""", unsafe_allow_html=True)
+    
     business()
 
 

@@ -47,15 +47,15 @@ div.st-emotion-cache-cnbvxy.e1nzilvr5{
 }
 
 [data-testid="stTableStyledTable"] {
-  color: #000;
-  border: 3px solid blue;
+  color: #fff;
+  border: 3px solid #CAF4FF;
   border-collapse: collapse;
   width:100%;
 }
 
 [data-testid="stTableStyledTable"] th, 
 [data-testid="stTableStyledTable"] td {
-  border: 1px solid black;
+  border: 1px solid #CAF4FF;
   padding: 8px;
   text-align: left;
 }
@@ -65,7 +65,7 @@ th.col_heading {
 }
 
 h1{color:red;font-size:30px;line-height:32px;}
-h2{color:blue;font-size:28px;line-height:30px;}
+h2{color:#CAF4FF;font-size:28px;line-height:30px;}
 h3{color:orange;font-size:24px;line-height:26px;}
 </style>
 '''
