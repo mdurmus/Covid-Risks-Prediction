@@ -24,6 +24,8 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 
 [ML Business Case](#ml-business-case)
 
+[Implementation of CRISP-DM](#implementation-of-crisp-dm)
+
 [Dashboard Design](#dashboard-design)
 
 [Feature Developments](#feature-developments)
@@ -138,6 +140,16 @@ Performance metrics such as accuracy and precision of the model will be used to 
 
 ### Customer Benefits
 A model that predicts COVID-19 cases can assist healthcare institutions in disease control and resource management. Additionally, it can serve as an informative tool for the overall health of the community.
+
+[Back to Top](#table-of-contents)
+
+## Implementation of CRISP-DM
+
+In my project, I've adopted the Cross Industry Standard Process for Data Mining (CRISP-DM) framework as a systematic method to steer the creation and implementation of the machine learning solution. CRISP-DM comprises six primary stages: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment. Let's delve into how each stage was integrated into this initiative:
+
+    **Business Understanding** :  
+
+
 
 [Back to Top](#table-of-contents)
 
