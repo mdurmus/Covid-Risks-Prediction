@@ -231,9 +231,9 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
 4. Check Yourself
 
-        | Prediction 1                    | Prediction 2                    |
-        |---------------------------------|---------------------------------|
-        |![Prediction 1](readme/pred1.png)|![Prediction 2](readme/pred2.png)|
+    | Prediction 1                    | Prediction 2                    |
+    |---------------------------------|---------------------------------|
+    |![Prediction 1](readme/pred1.png)|![Prediction 2](readme/pred2.png)|
 
     In this section, when certain information is provided to you, a prediction is made about whether the individual's vital functions will continue. However, it should be noted that this prediction may not accurately reflect reality.
 
