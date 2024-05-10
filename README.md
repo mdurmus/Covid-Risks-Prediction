@@ -55,21 +55,25 @@ The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirn
 | MEDICAL_UNIT | The type of National Health institution providing patient care and treatment. | 1-13 |
 | CLASIFFICATION_FINAL | Covid test results. | 1-7 |
 
+[Back to Top](#table-of-contents)
+
 ## Business Requirements
 
 The AI-based Covid risks prediction project will collect and integrate Covid-19 test results and symptom data from healthcare institutions and other sources. These data will be analyzed by a risk scoring algorithm and presented to users via a user interface. The project will encompass ensuring the security and privacy of user data, compliance with GDPR and similar legal regulations, scalability and performance, authentication and authorization processes, transmission and monitoring of results, and regular system maintenance.
 
 This AI-driven Covid risks prediction software will serve as a fast and effective Covid-19 monitoring and control tool for governments and healthcare institutions. It will provide significant support in identifying and guiding high-risk individuals to healthcare systems. Additionally, it will help create a secure environment for businesses and communities, thus aiding in preventing the spread of the pandemic. Individuals will be informed about their health status, enabling them to track and protect themselves, making them more aware and effective in combating the pandemic.
 
-## Hypothesis and Validation
+### Hypothesis and Validation
 
-### Hypothesis
+#### Hypothesis
 
 The hypothesis of the AI-based Covid risk prediction project is that it can accurately and reliably predict individuals' Covid-19 risk using Covid-19 test results and symptom data, thereby assisting healthcare institutions in effectively identifying high-risk individuals and guiding treatment.
 
-### Validation
+#### Validation
 
 The validation method involves evaluating the performance of the software on real-world data, particularly assessing its ability to accurately identify high-risk individuals. Furthermore, its effectiveness in guiding healthcare institutions and receiving feedback from them will be assessed to iterate and improve the software.
+
+[Back to Top](#table-of-contents)
 
 ## ML Based Disease Concerns Addressing Application
 
@@ -86,6 +90,8 @@ I used the correlation test to understand the relationships between variables in
 - Decision Tree ROC Curve: The slope is quite high, indicating that the model performs well. The curve starts from the bottom left corner and extends to the top right corner. This indicates that the model achieves high accuracy at all threshold values.
 
 You can access the details of these tests from the Test Results page within the project.
+
+[Back to Top](#table-of-contents)
 
 ## ML Business Case
 
@@ -130,6 +136,8 @@ Performance metrics such as accuracy and precision of the model will be used to 
 
 ### Customer Benefits
 A model that predicts COVID-19 cases can assist healthcare institutions in disease control and resource management. Additionally, it can serve as an informative tool for the overall health of the community.
+
+[Back to Top](#table-of-contents)
 
 ## Dashboard Design
 
@@ -197,9 +205,15 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
     ![ROC Curve](readme/decision_tree_roc_curve.png)
 
+[Back to Top](#table-of-contents)
+
+
 ## Feature Developments
 
     After consolidating the input data and outcomes and reporting them to the relevant units, generating order information for pharmaceuticals or necessary medical supplies from manufacturers, along with logistic forecasts, and providing information on the dates when end-users can access them.
+
+[Back to Top](#table-of-contents)
+
 
 ## Data Analysis and Machine Learning Libraries
 
@@ -306,6 +320,7 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
     watchdog==4.0.0
     Tools for monitoring and processing filesystem events.
 
+[Back to Top](#table-of-contents)
 
 ## Deployment
 
@@ -322,6 +337,8 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
     9. The mock terminal is then ready and accessible from a link similar to https://your-projects-name.herokuapp.com/
     10. If the slug size is too large then add large files not required for the app to the .slugignore file, similar to the .gitignore file.
 
+[Back to Top](#table-of-contents)
+
 ## Credits
 
     - Dataset: From user <a href="https://www.kaggle.com/datasets/meirnizri/covid19-dataset" target="_blank">MEIR NIZRI</a>
@@ -332,6 +349,10 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
         [vivhubb](https://github.com/vivhubb/portfolio-project-5-price-predictor?tab=readme-ov-file#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 
+[Back to Top](#table-of-contents)
+
 ## Acknowledgements
 
     I extend my thanks to my mentor, Mr. Rohit, for his assistance.
+
+[Back to Top](#table-of-contents)
