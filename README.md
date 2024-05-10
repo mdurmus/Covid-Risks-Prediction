@@ -129,9 +129,7 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
         - Transformation of DATE_DIED Values: The column DATE_DIED represents when the patient died in pandas format. If the value is 9999-99-99, it means the patient is alive. However, in my opinion, this could be represented with a boolean field. So, if the patient is alive, it would take FALSE, and if not, it would take TRUE.
 
-        - Correlation Test and Feature Extraction: In our application, the primary goal is to determine whether an individual is alive or deceased. Therefore, the most important column for us is 'DIED'. I attempted to assess the relationship between my target variable and other variables by calculating correlation matrices on the dataset. This was done as a correlation test.
-        
-        As a result, I was quite surprised to see that the following four variables had little to no impact on the outcome:
+        - Correlation Test and Feature Extraction: In our application, the primary goal is to determine whether an individual is alive or deceased. Therefore, the most important column for us is 'DIED'. I attempted to assess the relationship between my target variable and other variables by calculating correlation matrices on the dataset. This was done as a correlation test. As a result, I was quite surprised to see that the following four variables had little to no impact on the outcome:
 
         ```
         ['TOBACCO', 'ASTHMA', 'PREGNANT', 'INMSUPR']
@@ -143,6 +141,6 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
     - **Data Summary** We are viewing a summary of the dataset here. The first five records of all columns in the dataset are displayed, providing us with a brief overview of the data. The number of records displayed here can be updated as desired. However, due to technical constraints, increasing this number may lead to system strain or even render it unusable. Therefore, the number of records is limited to five here.
 
-    - **Access Data** In this section, users have the opportunity to select the columns they desire from the dataset. However, given the dataset's size, it's crucial for users to also determine the number of records displayed here. Without such control, issues like connection disruptions or data inconsistencies may arise, underscoring the necessity of limiting user selection.
-    
-    To accomplish this, users should be guided on how to specify both the columns and the number of records they wish to view. This empowers them with flexibility while ensuring system stability.
+    - **Access Data** In this section, users have the opportunity to select the columns they desire from the dataset. However, given the dataset's size, it's crucial for users to also determine the number of records displayed here. Without such control, issues like connection disruptions or data inconsistencies may arise, underscoring the necessity of limiting user selection. To accomplish this, users should be guided on how to specify both the columns and the number of records they wish to view. This empowers them with flexibility while ensuring system stability.
+
+    - Now, why is it important to limit the user's selection? By imposing constraints, such as a maximum number of records, we ensure that the system remains responsive and can efficiently handle the user's request. This prevents overloading the system with a large amount of data retrieval, mitigating potential performance issues. Thus, by striking a balance between user freedom and system stability, we optimize the user experience while maintaining operational efficiency.
