@@ -13,15 +13,25 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 ## Table of Contents
 
 [Dataset Content](#dataset-content)
+
 [Business Requirements](#business-requirements)
+
 [Hypothesis and Validation](#hypothesis-and-validation)
+
 [ML Based Disease Concerns Addressing Application](#ml-based-disease-concerns-addressing-application)
+
 [ML Business Case](#ml-business-case)
+
 [Dashboard Design](#dashboard-design)
+
 [Feature Developments](#feature-developments)
+
 [Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
+
 [Deployment](#deployment)
+
 [Credits](#credits)
+
 [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
