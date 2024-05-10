@@ -210,7 +210,7 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
 ## Feature Developments
 
-    After consolidating the input data and outcomes and reporting them to the relevant units, generating order information for pharmaceuticals or necessary medical supplies from manufacturers, along with logistic forecasts, and providing information on the dates when end-users can access them.
+After consolidating the input data and outcomes and reporting them to the relevant units, generating order information for pharmaceuticals or necessary medical supplies from manufacturers, along with logistic forecasts, and providing information on the dates when end-users can access them.
 
 [Back to Top](#table-of-contents)
 
