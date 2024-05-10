@@ -106,3 +106,17 @@ Performance metrics such as accuracy and precision of the model will be used to 
 
 ### Customer Benefits
 A model that predicts COVID-19 cases can assist healthcare institutions in disease control and resource management. Additionally, it can serve as an informative tool for the overall health of the community.
+
+## Dashboard Design
+
+1. Project Summary
+
+    - In this screen, I am explaining what the application can be used for and what its goal is.
+
+    - General information about the dataset obtained from Kaggle is provided, including the total number of records and details about the variables.
+
+    - The last paragraph on the relevant page explains why the project was developed, in other words, I am outlining our customers' requests and expectations from us.
+
+2. Dataset Features
+
+    
