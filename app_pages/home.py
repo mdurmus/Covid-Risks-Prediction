@@ -13,9 +13,8 @@ def home_body():
     st.write("## Dataset")
     dataset()
     st.write("")
-    st.markdown(f"""<span style="font-size:20px;background-color:yellow;color:red;">
+    st.markdown(f"""<span style="font-size:16px;padding:10px;border-radius:10px;background-color:#fd951f;color:#000;">
     For additional information, please click <a href='https://github.com/mdurmus/Covid-Risks-Prediction/blob/main/README.md' target='_blank'>here</a>.</span>""", unsafe_allow_html=True)
-    st.info("Bu bir infodur.")
     business()
 
 
