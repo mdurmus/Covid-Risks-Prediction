@@ -239,15 +239,25 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
 5. Test Result
 
+    ![Correlation Test and Result](readme/correlation.png)
+
     - **Correlation Test** The correlation test is a statistical technique used to assess the strength and direction of the relationship between two variables. This test attempts to determine how strong the relationship between variables is and in which direction it exists.
 
         In my project, I have included a table that clearly displays the connections between relevant features and their relationships.
 
+    ![Training Accuary](readme/training_accuary.png)
+
     - **Training Accuary** A performance metric that expresses the success of an ML model on the training set. In my project, this score is displayed as 0.9626941603535738.
+
+    ![Testing Accuary](readme/testing_accuary.png)
 
     - **Testing Accuracy** A performance metric that expresses the success of an ML model on the test data. In my project, this score is displayed as 0.9328095221847994.
 
+    ![F1 Score](readme/testing_accuary.png)
+
     - **F1 Score** F1 Score is a metric used in binary classification tasks, which combines both precision and recall into a single measure. For my project, this score is: 0.48611369990680336.
+
+    ![Confusion Matrix](readme/confusion_matrix.png)
 
     - **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
 
