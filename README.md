@@ -257,11 +257,12 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
     - **F1 Score** F1 Score is a metric used in binary classification tasks, which combines both precision and recall into a single measure. For my project, this score is: 0.48611369990680336.
 
-    ![Confusion Matrix](readme/confusion_matrix.png)
-
     - **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model.
 
+    ![Confusion Matrix](readme/confusion_matrix.png)
+
     - **Decision Tree ROC Curve** It is a graphical representation of the performance of a binary classification model, such as a decision tree classifier, at different threshold values.
+    
 
 [Back to Top](#table-of-contents)
 
