@@ -247,8 +247,8 @@ After consolidating the input data and outcomes and reporting them to the releva
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 |---------|------------------|-------------------|--------|-----------|
 | Nav Links | Nav links should load the corresponding page | Click the nav links| All links open the appropriate pages	| Pass |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
+| Links | Links should load the appropriate content	| Click the kaggle link	| Link loads the kaggle Covid data page | Pass |
+| Dataset Size | The representation of the data indicating the size of the dataset was provided accurately and comprehensively. | Wait to proccess | The value was written/displayed on the screen. | Pass |
 |         |                  |                   |        |           |
 |         |                  |                   |        |           |
 |         |                  |                   |        |           |
