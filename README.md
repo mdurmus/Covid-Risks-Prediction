@@ -167,4 +167,4 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
     -- **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
 
-    ["Confusion Matrix"](readme/visualization.png)
+    !["Confusion Matrix"](readme/visualization.png)
