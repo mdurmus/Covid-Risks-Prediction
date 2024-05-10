@@ -10,6 +10,8 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 
 [Covid Risk Project User Stories](https://github.com/users/mdurmus/projects/7/views/1)
 
+[Covid Risk Prediction Issues](https://github.com/mdurmus/Covid-Risks-Prediction/issues)
+
 ## Table of Contents
 
 [Dataset Content](#dataset-content)
