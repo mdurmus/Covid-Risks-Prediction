@@ -124,3 +124,15 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
     - **Data Cleaning** 
     
         - Correcting Pregnancy Values by Gender: In this section, I initially adjusted variables assessing the pregnancy status for females. In the original dataset, some females had values of 98, and some had 97 for this variable, while in some cases, it was observed to be NaN. Logically, a female can either be pregnant or not pregnant; hence, I converted this variable to a boolean type. Since males cannot be pregnant, I decided that it was illogical to use this variable for them and removed it from my dataset.
+
+        - Data Cleaning & Transformation: Some columns had taken values like 97, 98, or 99 instead of boolean values, which was fundamentally illogical. Instead, areas equal to 1 were set to TRUE, and areas equal to 2 were set to FALSE to represent them.
+
+        - Transformation of DATE_DIED Values: The column DATE_DIED represents when the patient died in pandas format. If the value is 9999-99-99, it means the patient is alive. However, in my opinion, this could be represented with a boolean field. So, if the patient is alive, it would take FALSE, and if not, it would take TRUE.
+
+        - Correlation Test and Feature Extraction: In our application, the primary goal is to determine whether an individual is alive or deceased. Therefore, the most important column for us is 'DIED'. I attempted to assess the relationship between my target variable and other variables by calculating correlation matrices on the dataset. This was done as a correlation test.
+
+        As a result, I was quite surprised to see that the following four variables had little to no impact on the outcome:
+
+        ```
+        ['TOBACCO', 'ASTHMA', 'PREGNANT', 'INMSUPR']
+        ```
