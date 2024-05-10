@@ -172,4 +172,142 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
     - **Decision Tree ROC Curve** It is a graphical representation of the performance of a binary classification model, such as a decision tree classifier, at different threshold values.
 
     ![ROC Curve](readme/decision_tree_roc_curve.png)
-    
+
+## Feature Developments
+
+    After consolidating the input data and outcomes and reporting them to the relevant units, generating order information for pharmaceuticals or necessary medical supplies from manufacturers, along with logistic forecasts, and providing information on the dates when end-users can access them.
+
+## Data Analysis and Machine Learning Libraries
+
+    altair==5.3.0
+    Altair is a library used for data visualization in Python. It is particularly used to create interactive and explanatory graphics.
+
+    blinker==1.7.0
+    Blinker is a library used in Python for event-driven programming.
+
+    cachetools==5.3.3
+    A library for facilitating caching.
+
+    click==8.1.7
+    A library for creating and managing console applications.
+
+    contourpy==1.2.1
+    A library for creating 2D and 3D contour plots.
+
+    cycler==0.12.1
+    A library for generating color cycles.
+
+    fonttools==4.51.0
+    Tools for reading and writing font files.
+
+    gitdb==4.0.11
+    GitPython==3.1.43
+    Libraries for accessing and manipulating Git databases.
+
+    joblib==1.4.0
+    Tools for parallel processing and memory management.
+
+    kaggle==1.6.12
+    A library for interacting with the Kaggle API.
+
+    kiwisolver==1.4.5
+    Tools for mathematical solvers.
+
+    matplotlib==3.8.4
+    A library for creating graphics.
+
+    numpy==1.26.4
+    A library for scientific computation and data manipulation.
+
+    pandas==2.2.2
+    A library for data analysis and manipulation.
+
+    pillow==10.3.0
+    A library for image processing.
+
+    protobuf==4.25
+    Tools for defining and using protocol data units.
+
+    pyarrow==15.0.2
+    Tools for using the Apache Arrow data format.
+
+    pydeck==0.8.1b0
+    A library for interactive data visualization.
+
+    pyparsing==3.1.2
+    Tools for parsing and analyzing text.
+
+    python-slugify==8.0.4
+    A library for converting strings to URL-friendly slugs.
+
+    pytz==2024.1
+    Tools for handling timezone information.
+
+    scikit-learn==1.4.2
+    A library containing machine learning algorithms.
+
+    scipy==1.13.0
+    A library for scientific and engineering calculations.
+
+    seaborn==0.13.2
+    A library providing a high-level interface for data visualization.
+
+    smmap==5.0.1
+    Tools for handling large data files.
+
+    streamlit==1.33.0
+    A library for creating and sharing web applications.
+
+    tenacity==8.2.3
+    Tools for implementing retry strategies.
+
+    text-unidecode==1.3
+    Tools for converting Unicode characters to ASCII.
+
+    threadpoolctl==3.4.0
+    Tools for controlling parallel processing queues.
+
+    toml==0.10.2
+    Tools for reading and writing configuration files in TOML format.
+
+    toolz==0.12.1
+    Tools for data processing and functional programming.
+
+    tqdm==4.66.2
+    A library for creating progress bars.
+
+    tzdata==2024.1
+    It contains timezone information and is used to manage timezone and daylight saving time changes in different geographical regions.
+
+    watchdog==4.0.0
+    Tools for monitoring and processing filesystem events.
+
+
+## Deployment
+
+    This application has been deployed from GitHub to Heroku by following the steps:
+
+    1. Create a requirement.txt file in GitHub, for Heroku to read, listing the dependencies the program needs in order to run.
+    2. Set the runtime.txt Python version to a version that the current Heroku stack supports.
+    3. Push the recent changes to GitHub and go to your Heroku account page to create and deploy.
+    4. Chose "CREATE NEW APP", give it a unique name, and select a geographical region.
+    5. From the Deploy tab, chose GitHub as deployment method, connect to GitHub and search for and select the project's repository.
+    6. Select the branch you want to deploy, then click Deploy Branch.
+    7. Click to "Enable Automatic Deploys " or chose to "Deploy Branch" from the Manual Deploy section.
+    8. Wait for the logs to run while the dependencies are installed and the app is being built.
+    9. The mock terminal is then ready and accessible from a link similar to https://your-projects-name.herokuapp.com/
+    10. If the slug size is too large then add large files not required for the app to the .slugignore file, similar to the .gitignore file.
+
+## Credits
+
+    - Dataset: From user <a href="https://www.kaggle.com/datasets/meirnizri/covid19-dataset" target="_blank">MEIR NIZRI</a>
+
+    - Readme: I utilized the following two repositories for preparing the readme file.
+
+        [KieMerr17](https://github.com/KieMerr17/PP5-Driver-Awareness-Detector?tab=readme-ov-file#dashboard-design)
+
+        [vivhubb](https://github.com/vivhubb/portfolio-project-5-price-predictor?tab=readme-ov-file#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+
+## Acknowledgements
+
+    I extend my thanks to my mentor, Mr. Rohit, for his assistance.
