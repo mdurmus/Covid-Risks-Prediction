@@ -341,9 +341,9 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
 ## Credits
 
-    - Dataset: From user <a href="https://www.kaggle.com/datasets/meirnizri/covid19-dataset" target="_blank">MEIR NIZRI</a>
+    -Dataset: From user <a href="https://www.kaggle.com/datasets/meirnizri/covid19-dataset" target="_blank">MEIR NIZRI</a>
 
-    - Readme: I utilized the following two repositories for preparing the readme file.
+    -Readme: I utilized the following two repositories for preparing the readme file.
 
         [KieMerr17](https://github.com/KieMerr17/PP5-Driver-Awareness-Detector?tab=readme-ov-file#dashboard-design)
 
