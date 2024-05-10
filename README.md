@@ -144,3 +144,27 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
     - **Access Data** In this section, users have the opportunity to select the columns they desire from the dataset. However, given the dataset's size, it's crucial for users to also determine the number of records displayed here. Without such control, issues like connection disruptions or data inconsistencies may arise, underscoring the necessity of limiting user selection. To accomplish this, users should be guided on how to specify both the columns and the number of records they wish to view. This empowers them with flexibility while ensuring system stability.
 
         Now, why is it important to limit the user's selection? By imposing constraints, such as a maximum number of records, we ensure that the system remains responsive and can efficiently handle the user's request. This prevents overloading the system with a large amount of data retrieval, mitigating potential performance issues. Thus, by striking a balance between user freedom and system stability, we optimize the user experience while maintaining operational efficiency.
+
+    - **Statistical Data** In this product, descriptive statistical information about the dataset is provided. For each numerical column in the dataset, measurements such as count, mean, standard deviation, minimum, quartiles, and maximum are available. These statistics offer insights into the tendency and distribution of the dataset.
+
+    - **Data Visulation** In this section, graphical representation of the data is provided. After users select the column of interest from the dataset, a graph illustrating the distribution of values in that column is generated. This enables users to examine the data from a different perspective with ease.
+
+4. Check Yourself
+
+    In this section, when certain information is provided to you, a prediction is made about whether the individual's vital functions will continue. However, it should be noted that this prediction may not accurately reflect reality.
+
+5. Test Result
+
+    - **Correlation Test** The correlation test is a statistical technique used to assess the strength and direction of the relationship between two variables. This test attempts to determine how strong the relationship between variables is and in which direction it exists.
+
+        In my project, I have included a table that clearly displays the connections between relevant features and their relationships.
+
+    - **Training Accuary** A performance metric that expresses the success of an ML model on the training set. In my project, this score is displayed as 0.9626941603535738.
+
+    - **Testing Accuracy** A performance metric that expresses the success of an ML model on the test data. In my project, this score is displayed as 0.9328095221847994.
+
+    - **F1 Score** F1 Score is a metric used in binary classification tasks, which combines both precision and recall into a single measure. For my project, this score is: 0.48611369990680336.
+
+    -- **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
+
+    ["Confusion Matrix"](https://res.cloudinary.com/dpg6ubeyo/image/upload/v1715168436/visualization_galv2p.png)
