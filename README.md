@@ -194,8 +194,12 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
        ![Dataset Cleaning](readme/dataset_cleaning.png)
 
         - Data Cleaning & Transformation: Some columns had taken values like 97, 98, or 99 instead of boolean values, which was fundamentally illogical. Instead, areas equal to 1 were set to TRUE, and areas equal to 2 were set to FALSE to represent them.
+        
+       ![Dataset Date Died](readme/dataset_date_died.png)
 
         - Transformation of DATE_DIED Values: The column DATE_DIED represents when the patient died in pandas format. If the value is 9999-99-99, it means the patient is alive. However, in my opinion, this could be represented with a boolean field. So, if the patient is alive, it would take FALSE, and if not, it would take TRUE.
+
+       ![Dataset Correlation](readme/dataset_correlation.png)
 
         - Correlation Test and Feature Extraction: In our application, the primary goal is to determine whether an individual is alive or deceased. Therefore, the most important column for us is 'DIED'. I attempted to assess the relationship between my target variable and other variables by calculating correlation matrices on the dataset. This was done as a correlation test. As a result, I was quite surprised to see that the following four variables had little to no impact on the outcome:
 
@@ -207,17 +211,29 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
 3. Data Features
 
+    ![Data Summary](readme/data_summary.png)
+
     - **Data Summary** We are viewing a summary of the dataset here. The first five records of all columns in the dataset are displayed, providing us with a brief overview of the data. The number of records displayed here can be updated as desired. However, due to technical constraints, increasing this number may lead to system strain or even render it unusable. Therefore, the number of records is limited to five here.
+
+    ![Access Data](readme/access_data.png)
 
     - **Access Data** In this section, users have the opportunity to select the columns they desire from the dataset. However, given the dataset's size, it's crucial for users to also determine the number of records displayed here. Without such control, issues like connection disruptions or data inconsistencies may arise, underscoring the necessity of limiting user selection. To accomplish this, users should be guided on how to specify both the columns and the number of records they wish to view. This empowers them with flexibility while ensuring system stability.
 
         Now, why is it important to limit the user's selection? By imposing constraints, such as a maximum number of records, we ensure that the system remains responsive and can efficiently handle the user's request. This prevents overloading the system with a large amount of data retrieval, mitigating potential performance issues. Thus, by striking a balance between user freedom and system stability, we optimize the user experience while maintaining operational efficiency.
 
+    ![Statistical Data](readme/statistical_data.png)
+
     - **Statistical Data** In this product, descriptive statistical information about the dataset is provided. For each numerical column in the dataset, measurements such as count, mean, standard deviation, minimum, quartiles, and maximum are available. These statistics offer insights into the tendency and distribution of the dataset.
+
+    ![Data Visulation](readme/data_visulation.png)
 
     - **Data Visulation** In this section, graphical representation of the data is provided. After users select the column of interest from the dataset, a graph illustrating the distribution of values in that column is generated. This enables users to examine the data from a different perspective with ease.
 
 4. Check Yourself
+
+        | Prediction 1                    | Prediction 2                    |
+        |---------------------------------|---------------------------------|
+        |![Prediction 1](readme/pred1.png)|![Prediction 2](readme/pred2.png)|
 
     In this section, when certain information is provided to you, a prediction is made about whether the individual's vital functions will continue. However, it should be noted that this prediction may not accurately reflect reality.
 
