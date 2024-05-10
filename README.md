@@ -384,6 +384,8 @@ Readme: I utilized the following two repositories for preparing the readme file.
 
 [vivhubb](https://github.com/vivhubb/portfolio-project-5-price-predictor?tab=readme-ov-file#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 
+[jflets](https://github.com/jflets/ml-mildew-detector?tab=readme-ov-file#implementation-of-crisp-dm)
+
 [Back to Top](#table-of-contents)
 
 ## Acknowledgements
