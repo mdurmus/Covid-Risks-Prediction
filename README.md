@@ -246,7 +246,7 @@ After consolidating the input data and outcomes and reporting them to the releva
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 |---------|------------------|-------------------|--------|-----------|
-|         |                  |                   |        |           |
+| Nav Links | Nav links should load the corresponding page | Click the nav links| All links open the appropriate pages	| Pass |
 |         |                  |                   |        |           |
 |         |                  |                   |        |           |
 |         |                  |                   |        |           |
