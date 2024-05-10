@@ -165,6 +165,11 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
     - **F1 Score** F1 Score is a metric used in binary classification tasks, which combines both precision and recall into a single measure. For my project, this score is: 0.48611369990680336.
 
-    -- **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
+    - **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
 
     !["Confusion Matrix"](readme/visualization.png)
+
+    - **Decision Tree ROC Curve** It is a graphical representation of the performance of a binary classification model, such as a decision tree classifier, at different threshold values.
+
+    ![ROC Curve](readme/decision_tree_roc_curve.png)
+    
