@@ -30,6 +30,8 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 
 [Feature Developments](#feature-developments)
 
+[Testing](#testing)
+
 [Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
 
 [Deployment](#deployment)
@@ -240,6 +242,42 @@ After consolidating the input data and outcomes and reporting them to the releva
 
 [Back to Top](#table-of-contents)
 
+## Testing
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+|---------|------------------|-------------------|--------|-----------|
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+|         |                  |                   |        |           |
+-----------------------------------------------------------------------
+
+[Back to Top](#table-of-contents)
 
 ## Data Analysis and Machine Learning Libraries
 
