@@ -181,11 +181,17 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
 2. Dataset Features
 
+    ![Dataset Page](readme/dataset.png)
+
     - **Dataset**: In this section, the number of records and variables in the dataset has been specified. After selecting features, I organized some boolean variables according to our business logic and made changes to their values. I also displayed the total number of records in this area.
 
     - **Data Cleaning** 
+
+        ![Dataset Pregnancy Page](readme/dataset_pregnancy.png)
     
         - Correcting Pregnancy Values by Gender: In this section, I initially adjusted variables assessing the pregnancy status for females. In the original dataset, some females had values of 98, and some had 97 for this variable, while in some cases, it was observed to be NaN. Logically, a female can either be pregnant or not pregnant; hence, I converted this variable to a boolean type. Since males cannot be pregnant, I decided that it was illogical to use this variable for them and removed it from my dataset.
+
+       ![Dataset Cleaning](readme/dataset_cleaning.png)
 
         - Data Cleaning & Transformation: Some columns had taken values like 97, 98, or 99 instead of boolean values, which was fundamentally illogical. Instead, areas equal to 1 were set to TRUE, and areas equal to 2 were set to FALSE to represent them.
 
