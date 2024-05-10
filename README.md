@@ -249,33 +249,11 @@ After consolidating the input data and outcomes and reporting them to the releva
 | Nav Links | Nav links should load the corresponding page | Click the nav links| All links open the appropriate pages	| Pass |
 | Links | Links should load the appropriate content	| Click the kaggle link	| Link loads the kaggle Covid data page | Pass |
 | Dataset Size | The representation of the data indicating the size of the dataset was provided accurately and comprehensively. | Wait to proccess | The value was written/displayed on the screen. | Pass |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
-|         |                  |                   |        |           |
------------------------------------------------------------------------
+| Data Summary | Printing the data to the screen. | Click the Data Features link | Wait to proccess | Pass |
+| Access Data | The user first selects the amount of data and then selects the columns to be listed. | Select record count after then select column(s). | Displaying the relevant columns in the specified amount. | Pass |
+| Statistical Data | Showing statistical data | Wait to proccess | The value was written/displayed on the screen. | Pass |
+| Data Visulation | Showing data as graphical view | The user selects the column to be displayed graphically. | Wait to proccess | Pass |
+| Check Yourself | After the user enters the data, life expectancy prediction is made. | Entering individual's health information. | The prediction has been printed/displayed on the screen. | Pass |
 
 [Back to Top](#table-of-contents)
 
