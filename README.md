@@ -119,4 +119,4 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
 2. Dataset Features
 
-    
+    - Dataset: In this section, the number of records and variables in the dataset has been specified. After selecting features, I organized some boolean variables according to our business logic and made changes to their values. I also displayed the total number of records in this area.
