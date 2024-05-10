@@ -147,8 +147,7 @@ A model that predicts COVID-19 cases can assist healthcare institutions in disea
 
 In my project, I've adopted the Cross Industry Standard Process for Data Mining (CRISP-DM) framework as a systematic method to steer the creation and implementation of the machine learning solution. CRISP-DM comprises six primary stages: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment. Let's delve into how each stage was integrated into this initiative:
 
-- Business Understanding:
-    When starting my project, I began by establishing the goals and requirements of the project. At this stage, the most crucial aspect was understanding what the end user expected to see on the screen. And, of course, it was essential to calculate where I needed to start. This allowed me to plan and clarify each stage of the project from its foundation to its endpoint.
+- **Business Understanding:** When starting my project, I began by establishing the goals and requirements of the project. At this stage, the most crucial aspect was understanding what the end user expected to see on the screen. And, of course, it was essential to calculate where I needed to start. This allowed me to plan and clarify each stage of the project from its foundation to its endpoint.
 
 
 
