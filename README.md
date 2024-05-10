@@ -10,6 +10,20 @@ One of the main challenges faced by healthcare providers during the pandemic is 
 
 [Covid Risk Project User Stories](https://github.com/users/mdurmus/projects/7/views/1)
 
+## Table of Contents
+
+[Dataset Content](#dataset-content)
+[Business Requirements](#business-requirements)
+[Hypothesis and Validation](#hypothesis-and-validation)
+[ML Based Disease Concerns Addressing Application](#ml-based-disease-concerns-addressing-application)
+[ML Business Case](#ml-business-case)
+[Dashboard Design](#dashboard-design)
+[Feature Developments](#feature-developments)
+[Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
+[Deployment](#deployment)
+[Credits](#credits)
+[Acknowledgements](#acknowledgements)
+
 ## Dataset Content
 
 The source of this dataset is the [Kaggle](https://www.kaggle.com/datasets/meirnizri/covid19-dataset) website. The dataset has been provided by the Mexican government. Originally, it consists of 21 features and a total of 1,048,576 patient records. However, due to feature engineering efforts, the number of features has been reduced to 16. You can find relevant explanations on the project page.
