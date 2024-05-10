@@ -345,14 +345,14 @@ Dataset: From user <a href="https://www.kaggle.com/datasets/meirnizri/covid19-da
 
 Readme: I utilized the following two repositories for preparing the readme file.
 
-    [KieMerr17](https://github.com/KieMerr17/PP5-Driver-Awareness-Detector?tab=readme-ov-file#dashboard-design)
+[KieMerr17](https://github.com/KieMerr17/PP5-Driver-Awareness-Detector?tab=readme-ov-file#dashboard-design)
 
-    [vivhubb](https://github.com/vivhubb/portfolio-project-5-price-predictor?tab=readme-ov-file#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+[vivhubb](https://github.com/vivhubb/portfolio-project-5-price-predictor?tab=readme-ov-file#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 
 [Back to Top](#table-of-contents)
 
 ## Acknowledgements
 
-    I extend my thanks to my mentor, Mr. Rohit, for his assistance.
+I extend my thanks to my mentor, Mr. Rohit, for his assistance.
 
 [Back to Top](#table-of-contents)
