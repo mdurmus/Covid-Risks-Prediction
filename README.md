@@ -149,6 +149,18 @@ In my project, I've adopted the Cross Industry Standard Process for Data Mining 
 
 - **Business Understanding:** When starting my project, I began by establishing the goals and requirements of the project. At this stage, the most crucial aspect was understanding what the end user expected to see on the screen. And, of course, it was essential to calculate where I needed to start. This allowed me to plan and clarify each stage of the project from its foundation to its endpoint.
 
+- **Data Understanding:** The most crucial point of a project was understanding and structuring the dataset correctly. Therefore, it was imperative for me to have a thorough understanding of the dataset I would be using. In examining the dataset, I first needed to determine what the features should be and how these features should be organized, as well as identify which variables would be useful or necessary for the target labels. To do this, I had to comprehend the dataset I examined on Kaggle and then create a list of actions to take on the dataset.
+
+- **Data Preparation:** During the data preparation stage, it was crucial to ensure that my dataset was suitable for model training. This involved cleaning the data to address missing or inconsistent values, performing feature engineering to extract relevant information from the data, and preparing the dataset for modeling. Additionally, I aimed to build a stronger model by increasing the diversity of the data in the dataset to train the model effectively.
+
+- **Modeling:** While conducting the modeling process, I utilized the scikit-learn extension to both construct the model and train it. Additionally, I defined the architecture and performed hyperparameter tuning to optimize performance.
+
+- **Evaluation:** During this stage, I conducted various tests to evaluate the performance of the model and ensure the correctness of my actions. Splitting the dataset into training and testing sets allowed me to develop new behaviors based on the results of performance metrics from these tests. I iteratively refined models based on evaluation results to enhance their accuracies and classification capabilities.
+
+- **Deployment:** In the final stage of CRISP-DM, I programmed the outcomes of the aforementioned five stages to be available to stakeholders or customers through an interface or API system. In my project, I programmed a web interface using the Streamlit extension and made it available for users. Continuous monitoring and maintenance ensure the continuity of the project by reviewing possible or reported errors.
+
+By adhering to the CRISP-DM framework, I guaranteed a methodical and organized method throughout the entirety of the data mining journey, starting from grasping the business dilemma to implementing the remedy in an actual setting.
+
 
 
 [Back to Top](#table-of-contents)
