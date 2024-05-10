@@ -259,13 +259,9 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
     ![Confusion Matrix](readme/confusion_matrix.png)
 
-    - **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model. 
-
-    !["Confusion Matrix"](readme/visualization.png)
+    - **Confusion Matrix** Confusion Matrix, is a metric used to evaluate the performance of a classification model.
 
     - **Decision Tree ROC Curve** It is a graphical representation of the performance of a binary classification model, such as a decision tree classifier, at different threshold values.
-
-    ![ROC Curve](readme/decision_tree_roc_curve.png)
 
 [Back to Top](#table-of-contents)
 
