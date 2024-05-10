@@ -439,6 +439,6 @@ Readme: I utilized the following two repositories for preparing the readme file.
 
 ## Acknowledgements
 
-I extend my thanks to my mentor, Mr. Rohit, for his assistance.
+I extend my thanks to my mentor, [Mr. Rohit](https://github.com/rohit0286), for his assistance.
 
 [Back to Top](#table-of-contents)
