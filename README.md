@@ -171,6 +171,8 @@ By adhering to the CRISP-DM framework, I guaranteed a methodical and organized m
 
 1. Project Summary
 
+    ![Project Summary Page](readme/project_summary.png)
+
     - In this screen, I am explaining what the application can be used for and what its goal is.
 
     - General information about the dataset obtained from Kaggle is provided, including the total number of records and details about the variables.
